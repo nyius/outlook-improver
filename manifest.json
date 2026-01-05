@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "Outlook Improver",
+	"version": "1.0.0",
+	"description": "Improves the styling of Outlook",
+	"permissions": [],
+	"content_scripts": [
+		{
+			"matches": ["https://outlook.office.com/*"],
+			"css": ["styles.css"],
+			"run_at": "document_start"
+		}
+	],
+	"icons": {}
+}
